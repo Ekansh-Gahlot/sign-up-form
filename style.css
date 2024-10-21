@@ -1,0 +1,151 @@
+@font-face {
+    font-family: norse;
+    src: url(font/Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    
+}
+
+.image-container{
+    background-image: url(background/background.avif);
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+}
+
+.logo-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 15%;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.image-txt{
+    font-family: 'norse';
+    font-size: 6rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.first {
+    margin-top: 10%;
+}
+
+.form-wrapper {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.right {
+    width: 70%;
+    height: 100vh;
+    background-color: #f9fafb;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    gap: 50px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+input {
+    outline: none;
+    height: 1.6rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 100%;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+input[type='password']:invalid {
+    border-color: red;
+
+}
+
+input[type='password']:invalid + span::after {
+    font-size: 0.8rem;
+    content: '* Passwords do not match';
+    color: red;
+    position: absolute;
+    top: 195px;
+}
+
+
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 1em 3em;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+legend {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-left: 50px;
+}
