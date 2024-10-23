@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(font/Norse-Bold.otf);
+}
+
+.left{
+    width: 30%;
+    background-image: url(background/background.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.right{
+    width: 70%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo-wrapper{
+    height: 20vh;
+    display: flex;
+    margin-top: 35%;
+    gap: 30px;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.logo-img{
+    height: 80%;
+    margin-left: 10%;
+    /* margin-right: 30px; */
+}
+
+.logo-txt{
+    width: 100%;
+    font-family: 'norse';
+    color: white;
+    font-size: 125px;
+}
+
+
+.right-txt{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+legend{
+    font-family: 'norse';
+    margin-left: 20px;
+    font-size: 20px;
+}
+.form-wrapper{
+    display: flex;
+}
+
+.form-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-right{
+    display: flex;
+    /* flex-direction: column; */
+}
